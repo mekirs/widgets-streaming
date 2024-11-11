@@ -21,14 +21,13 @@
             height: 100%;
             z-index: 1;
         }
-        /* Estilo para las alertas de Botrix, más pequeñas y encima de todos */
+        /* Estilo para las alertas de Botrix, más pequeñas y más a la izquierda */
         #botrix-alerts {
             position: absolute;
             top: 10px;
-            left: 50%;
-            transform: translateX(-50%); /* Centrado horizontalmente */
-            width: 80px; /* Tamaño más pequeño */
-            height: 30px; /* Tamaño más pequeño */
+            left: 30%; /* Más a la izquierda */
+            width: 60px; /* Tamaño más pequeño */
+            height: 20px; /* Tamaño más pequeño */
             z-index: 9999; /* Asegura que esté encima de todos los elementos */
         }
         /* Estilo para el chat de Botrix en la esquina inferior izquierda */
@@ -51,7 +50,7 @@
     <!-- Widget de SoundAlerts -->
     <iframe id="soundalerts" src="https://source.soundalerts.com/overlay/fd9ea406-efce-3885-b5f5-868305d5c76c/tZlhgHsRHOlCXqWyS577" frameborder="0" allow="autoplay"></iframe>
 
-    <!-- Widget de alertas de Botrix encima de todos, mucho más pequeño -->
+    <!-- Widget de alertas de Botrix encima de todos, más pequeño y más a la izquierda -->
     <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
 
     <!-- Widget de chat de Botrix -->
