@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integración de Widgets</title>
+    <style>
+        /* Estilos para el contenedor principal */
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        /* Estilo para SoundAlerts que ocupará todo el fondo */
+        #soundalerts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+        }
+        /* Estilo para el chat de Botrix en la esquina inferior izquierda */
+        #botrix-chat {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 300px; /* Ajusta el tamaño según prefieras */
+            height: 400px;
+            z-index: 2;
+        }
+        /* Estilo para las alertas de Botrix en la esquina superior izquierda */
+        #botrix-alerts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px; /* Ajusta el tamaño según prefieras */
+            height: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Widget de SoundAlerts -->
+    <iframe id="soundalerts" src="https://source.soundalerts.com/overlay/fd9ea406-efce-3885-b5f5-868305d5c76c/tZlhgHsRHOlCXqWyS577" frameborder="0" allow="autoplay"></iframe>
+
+    <!-- Widget de chat de Botrix -->
+    <iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=14&fontSize=15&trovo=true&twitch=true&youtube=true&kick=false&livespace=false&platformIcon=true&theme=default" frameborder="0" allow="autoplay"></iframe>
+
+    <!-- Widget de alertas de Botrix -->
+    <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
+</body>
+</html>
