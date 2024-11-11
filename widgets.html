@@ -35,19 +35,18 @@
         #botrix-chat iframe {
             font-size: 12px !important; /* Reducción del tamaño de fuente */      
         }
-        /* Estilo para las alertas de Botrix, debajo de todos los demás elementos y más a la izquierda */
+        /* Estilo para las alertas de Botrix en la parte superior, un poco al medio */
         #botrix-alerts {
             position: absolute;
-            bottom: 10px; /* Colocado en la parte inferior */
-            left: 10px; /* A la izquierda */
-            width: 200px; /* Tamaño más pequeño */
-            height: 200px; /* Tamaño más pequeño */
-            z-index: 2; 
+            top: 10px; /* Cerca de la parte superior */
+            left: 40%; /* Desplazado al medio */
+            width: 150px; /* Tamaño más pequeño */
+            height: 50px; /* Tamaño más pequeño */
+            z-index: 3; /* Asegura que esté encima de todos los demás elementos */
         }
-        /* Modificación para reducir el tamaño de la fuente en el chat */
+        /* Modificación para reducir el tamaño de la fuente en las alertas */
         #botrix-alerts iframe {
-            font-size: 12px !important; /* Reducción del tamaño de fuente */  
-
+            font-size: 12px !important; /* Reducción del tamaño de fuente */
         }
     </style>
 </head>
@@ -58,7 +57,7 @@
     <!-- Widget de chat de Botrix -->
     <iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=14&fontSize=10&trovo=true&twitch=true&youtube=true&kick=false&livespace=false&platformIcon=true&theme=default" frameborder="0" allow="autoplay"></iframe>
 
-    <!-- Widget de alertas de Botrix debajo de todos, más pequeño y a la izquierda -->
+    <!-- Widget de alertas de Botrix, más pequeño y centrado en la parte superior -->
     <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
 </body>
 </html>
