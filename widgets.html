@@ -9,8 +9,8 @@
         body {
             margin: 0;
             overflow: hidden;
-            width: 1280px;
-            height: 720px;
+            width: 854px;
+            height: 480px;
         }
         /* Estilo para SoundAlerts que ocupará todo el fondo */
         #soundalerts {
@@ -31,9 +31,9 @@
             overflow: hidden;
             z-index: 2;
         }
-        /* Modificación para reducir el tamaño de la fuente en el chat */
+        /* Modificación para aumentar el tamaño de la fuente en el chat */
         #botrix-chat iframe {
-            font-size: 80px !important; /* Reducción del tamaño de fuente */      
+            font-size: 80px !important; /* Aumento del tamaño de fuente */      
         }
         /* Estilo para las alertas de Botrix en la parte superior, un poco al medio */
         #botrix-alerts {
@@ -44,7 +44,7 @@
             height: 480px; /* altura */
             z-index: 3; /* Asegura que esté encima de todos los demás elementos */
         }
-        /* Modificación para reducir el tamaño de la fuente en las alertas */
+        /* Modificación para ajustar el tamaño de la fuente en las alertas */
         #botrix-alerts iframe {
             font-size: 2px !important; /* Reducción del tamaño de fuente */
             height: 100% !important; /* Asegura que el iframe ocupe el espacio completo */
@@ -57,7 +57,7 @@
     <iframe id="soundalerts" src="https://source.soundalerts.com/overlay/fd9ea406-efce-3885-b5f5-868305d5c76c/tZlhgHsRHOlCXqWyS577" frameborder="0" allow="autoplay"></iframe>
 
     <!-- Widget de chat de Botrix -->
-    <iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=14&fontSize=10&trovo=true&twitch=true&youtube=true&kick=false&livespace=false&platformIcon=true&theme=default" frameborder="0" allow="autoplay"></iframe>
+    <iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=14&fontSize=80&trovo=true&twitch=true&youtube=true&kick=false&livespace=false&platformIcon=true&theme=default" frameborder="0" allow="autoplay"></iframe>
 
     <!-- Widget de alertas de Botrix, más pequeño y centrado en la parte superior -->
     <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
