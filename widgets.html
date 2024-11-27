@@ -21,6 +21,19 @@
             height: 100%;
             z-index: 1;
         }
+        /* Estilo para el widget SongRequest en la parte superior izquierda */
+        #songrequest {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 600px; /* ancho */
+            height: 200px; /* altura */
+            overflow: hidden;
+            z-index: 1; /* Asegura que esté encima de otros elementos */ }
+        /* Modificación para reducir el tamaño de la fuente */
+        #songrequest {
+            font-size: 3px !important; /* Ajuste a un tamaño más pequeño */          
+        }
         /* Estilo para el chat de Botrix en la esquina inferior izquierda */
         #botrix-chat {
             position: absolute;
@@ -58,6 +71,9 @@
 
     <!-- Widget de chat de Botrix -->
     <iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=14&fontSize=12&trovo=true&twitch=true&youtube=true&kick=false&livespace=false&platformIcon=true&theme=default" frameborder="0" allow="autoplay"></iframe>
+
+<!-- Widget de SongRequest en la parte superior izquierda -->
+    <iframe id="songrequest" src="https://botrix.live/widgets/songrequest/?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
 
     <!-- Widget de alertas de Botrix, más pequeño y centrado en la parte superior -->
     <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
