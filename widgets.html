@@ -7,75 +7,98 @@
     <style>
         /* Estilos para el contenedor principal */
         body {
-            margin: 0;
-            overflow: hidden;
-            width: 854px;
-            height: 480px;
-        }
-        /* Estilo para SoundAlerts que ocupará todo el fondo */
-        #soundalerts {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-        /* Estilo para el widget SongRequest en la parte superior izquierda */
-        #songrequest {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 600px; /* ancho */
-            height: 200px; /* altura */
-            overflow: hidden;
-            z-index: 1; /* Asegura que esté encima de otros elementos */ }
-        /* Modificación para reducir el tamaño de la fuente */
-        #songrequest {
-            font-size: 3px !important; /* Ajuste a un tamaño más pequeño */          
-        }
-        /* Estilo para el chat de Botrix en la esquina inferior izquierda */
-        #botrix-chat {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            width: 500px; /* ancho */
-            height: 250px; /* altura */
-            overflow: hidden;
-            z-index: 2;
-        }
-        /* Modificación para reducir el tamaño de la fuente en el chat */
-        #botrix-chat iframe {
-            font-size: 12px !important; /* Ajuste a un tamaño más pequeño */      
-        }
-        /* Estilo para las alertas de Botrix en la parte superior, un poco al medio */
-        #botrix-alerts {
-            position: absolute;
-            top: 0px; /* Cerca de la parte superior */
-            left: -6%; /* Desplazado al medio */
-            width: 854px; /* ancho */
-            height: 480px; /* altura */
-            z-index: 3; /* Asegura que esté encima de todos los demás elementos */
-        }
-        /* Modificación para ajustar el tamaño de la fuente en las alertas */
-        #botrix-alerts iframe {
-            font-size: 2px !important; /* Reducción del tamaño de fuente */
-            height: 100% !important; /* Asegura que el iframe ocupe el espacio completo */
-            width: 100% !important; /* Asegura que el iframe ocupe el espacio completo */
-        }
+margin: 0;
+overflow: hidden;
+width: 854px;
+height: 480px;}
+
+
+#soundalerts {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;}
+
+
+#songrequest {
+position: absolute;
+top: 0px;
+left: 0%px;
+width: 600px; /* ancho */
+height: 200px; /* alto */
+overflow: hidden;
+z-index: 1;}
+
+/*Escalar el Widget */  
+#songrequest {
+        transform: scale(0.6);  /* Escala el iframe */
+        transform-origin: 0 0;  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
+    }
+
+
+#botrix-chat {
+position: absolute;
+bottom: 10px;
+left: 10px;
+width: 500px; /* ancho */
+height: 250px; /* altura */
+overflow: hidden;
+z-index: 2;}
+
+/* para reducir el tamaño de chat */
+#botrix-chat iframe {
+font-size: 12px !important;} /* tamaño pequeño */ 
+
+
+#metadonación {
+position: absolute;
+top: 0px;
+left: 900px;
+width: 600px; /* ancho */
+height: 200px; /* alto */
+overflow: hidden;
+z-index: 1;}
+
+/*Escalar el Widget */  
+#metadonación {
+        transform: scale(0.6);  /* Escala el iframe */
+        transform-origin: 0 0;  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
+    }
+
+
+#botrix-alerts {
+position: absolute;
+top: 1px; /* Cerca de la parte superior */
+left: 30%; /* Desplazado al medio */
+width: 854px; /* ancho */
+height: 480px; /* altura */
+z-index: 3;} /* Asegura que esté encima de todos */ 
+
+/*Escalar el Widget */  
+#botrix-alerts {
+transform: scale(0.7);  /* Escala el iframe */
+transform-origin: 0 0;  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
+    }
+
+
     </style>
 </head>
 <body>
-    <!-- Widget de SoundAlerts -->
-    <iframe id="soundalerts" src="https://source.soundalerts.com/overlay/fd9ea406-efce-3885-b5f5-868305d5c76c/tZlhgHsRHOlCXqWyS577" frameborder="0" allow="autoplay"></iframe>
+<!-- Widget de SoundAlerts -->
+<iframe id="soundalerts" src="https://source.soundalerts.com/overlay/fd9ea406-efce-3885-b5f5-868305d5c76c/tZlhgHsRHOlCXqWyS577" frameborder="0" allow="autoplay"></iframe>
 
-    <!-- Widget de chat de Botrix -->
-    <iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=14&fontSize=12&trovo=true&twitch=true&youtube=true&kick=false&livespace=false&platformIcon=true&theme=default" frameborder="0" allow="autoplay"></iframe>
+<!-- Widget de chat de Botrix -->
+<iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=14&fontSize=12&trovo=true&twitch=true&youtube=true&kick=false&livespace=false&platformIcon=true&theme=default" frameborder="0" allow="autoplay"></iframe>
 
-<!-- Widget de SongRequest en la parte superior izquierda -->
-    <iframe id="songrequest" src="https://botrix.live/widgets/songrequest/?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
+<!-- Widget de SongRequest botrix -->
+<iframe id="songrequest" src="https://botrix.live/widgets/songrequest/?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
 
-    <!-- Widget de alertas de Botrix, más pequeño y centrado en la parte superior -->
-    <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
+<!-- Widget de meta de donación de Botrix-->
+<iframe id="metadonación" src="https://botrix.live/widgets/goals/donationgoal/?tema=cleanradius&bid=hL4jXwuISOTVQTdQVTPC9A&font=Arial&cantidad=100&cantidadI=0&platform=twitch&interval=lastDay&color=cf34a1;ffffff&c=#cf34a1#ffffff&texto=meta%20de%20donaciones" frameborder="0" allow="autoplay"></iframe>
+
+<!-- Widget de alertas de Botrix-->
+<iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
 </body>
 </html>
