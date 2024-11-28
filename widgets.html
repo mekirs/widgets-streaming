@@ -12,7 +12,6 @@ overflow: hidden;
 width: 854px;
 height: 480px;}
 
-
 #soundalerts {
 position: absolute;
 top: 0;
@@ -21,7 +20,6 @@ width: 100%;
 height: 100%;
 z-index: 1;}
 
-
 #songrequest {
 position: absolute;
 top: 0px;
@@ -29,15 +27,10 @@ left: 0px;
 width: 600px; /* ancho */
 height: 200px; /* alto */
 overflow: hidden;
-z-index: 1;}
-
-/*Escalar el Widget */  
-#songrequest {
-transform: scale(0.4);  /* Escala el iframe */
-transform-origin: 0 0;  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
-    }
-
-
+z-index: 1;
+transform: scale(0.4);  /*Escalar el Widget */  
+transform-origin: 0 0;}  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
+    
 #botrix-chat {
 position: absolute;
 bottom: 0px;
@@ -49,22 +42,27 @@ z-index: 2;
 transform: scale(0.7);  /* Escala el iframe */
 transform-origin: 0 0;}  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
     
-
-#metadonación {
+#metaelixir {
 position: absolute;
 top: 0px;
 left: 500px;
 width: 600px; /* ancho */
 height: 200px; /* alto */
 overflow: hidden;
-z-index: 1;}
-
-/*Escalar el Widget */  
-#metadonación {
-transform: scale(0.4);  /* Escala el iframe */
-transform-origin: 0 0;  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
-    }
-
+z-index: 1;
+transform: scale(0.4);  /*Escalar el Widget */ 
+transform-origin: 0 0;}
+        
+#metamana {
+position: absolute;
+top: 0px;
+left: 200px;
+width: 600px; /* ancho */
+height: 200px; /* alto */
+overflow: hidden;
+z-index: 1;
+transform: scale(0.4);  /*Escalar el Widget */ 
+transform-origin: 0 0;} /* Asegura que el escalado ocurra desde la esquina superior izquierda */
 
 #botrix-alerts {
 position: absolute;
@@ -72,14 +70,9 @@ top: 1px; /* Cerca de la parte superior */
 left: 30%; /* Desplazado al medio */
 width: 854px; /* ancho */
 height: 480px; /* altura */
-z-index: 3;} /* Asegura que esté encima de todos */ 
-
-/*Escalar el Widget */  
-#botrix-alerts {
+z-index: 3;/* Asegura que esté encima de todos */ 
 transform: scale(0.7);  /* Escala el iframe */
-transform-origin: 0 0;  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
-    }
-
+transform-origin: 0 0;}  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
 
     </style>
 </head>
@@ -93,8 +86,11 @@ transform-origin: 0 0;  /* Asegura que el escalado ocurra desde la esquina super
 <!-- Widget de SongRequest botrix -->
 <iframe id="songrequest" src="https://botrix.live/widgets/songrequest/?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
 
-<!-- Widget de meta de donación de Botrix-->
-<iframe id="metadonación" src="https://botrix.live/widgets/goals/donationgoal/?tema=cleanradius&bid=hL4jXwuISOTVQTdQVTPC9A&font=Arial&cantidad=100&cantidadI=0&platform=twitch&interval=lastDay&color=cf34a1;ffffff&c=#cf34a1#ffffff&texto=meta%20de%20donaciones" frameborder="0" allow="autoplay"></iframe>
+<!-- Widget de meta de elixir botrix -->
+<iframe id="metaelixir" src="https://botrix.live/widgets/goals/elixir?tema=cleanradius&clientid=9Lpkd9wkOvH01DYtLKj3Ig&font=Arial&cantidad=5000&cantidadI=0&d=30&color=ff0088;ffffff&c=#ff0088#ffffff&texto=meta%20DE%20ELIXIR" frameborder="0" allow="autoplay"></iframe>    
+    
+<!-- Widget de meta de mana de Botrix-->
+<iframe id="metamana" src="https://botrix.live/widgets/goals/mana?tema=cleanradius&clientid=9Lpkd9wkOvH01DYtLKj3Ig&font=Arial&cantidad=50000&cantidadI=0&d=7&color=0073ff;ffffff&c=#0073ff#ffffff&texto=meta%20de%20MANA" frameborder="0" allow="autoplay"></iframe>
 
 <!-- Widget de alertas de Botrix-->
 <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
