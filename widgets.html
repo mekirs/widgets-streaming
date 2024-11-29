@@ -7,93 +7,95 @@
     <style>
         /* Estilos para el contenedor principal */
         body {
-margin: 0;
-overflow: hidden;
-width: 854px;
-height: 480px;}
+            margin: 0;
+            overflow: hidden;
+            width: 1280px;
+            height: 720px;
+        }
 
-#soundalerts {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 1;}
-
-#songrequest {
-position: absolute;
-top: 0px;
-left: -4px;
-width: 600px; /* ancho */
-height: 200px; /* alto */
-overflow: hidden;
-z-index: 1;
-transform: scale(0.4);  /*Escalar el Widget */  
-transform-origin: 0 0;}  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
-    
-#botrix-chat {
-position: absolute;
-bottom: 20px;
-right: 0;    
-left: 450px;
-width: 400px; /* ancho */
-height: 300px; /* altura */
-overflow: hidden;
-z-index: 2;
-transform: scale(0.4);  /* Escala el iframe */
-transform-origin: bottom right;} /* Escalado desde la esquina inferior derecha */
-    
-#metaelixir {
-position: absolute;
-top: 0px;
-left: 610px;
-width: 600px; /* ancho */
-height: 200px; /* alto */
-overflow: hidden;
-z-index: 1;
-transform: scale(0.4);  /*Escalar el Widget */ 
-transform-origin: 0 0;}
         
-#metamana {
-position: absolute;
-top: 0px;
-left: 380px;
-width: 600px; /* ancho */
-height: 200px; /* alto */
-overflow: hidden;
-z-index: 1;
-transform: scale(0.4);  /*Escalar el Widget */ 
-transform-origin: 0 0;} /* Asegura que el escalado ocurra desde la esquina superior izquierda */
+        #songrequest {
+            position: absolute;
+            top: 500px; /* desplazamiento desde arriba */
+            left: -10px; /* desplazamiento costados */ 
+            width: 600px; /* ancho */
+            height: 200px; /* alto */
+            z-index: 1; /* capa */ 
+            transform: scale(0.3);
+            transform-origin: 0 0;
+        }
 
-#botrix-alerts {
-position: absolute;
-top: 1px; /* Cerca de la parte superior */
-left: 30%; /* Desplazado al medio */
-width: 854px; /* ancho */
-height: 480px; /* altura */
-z-index: 3;/* Asegura que esté encima de todos */ 
-transform: scale(0.7);  /* Escala el iframe */
-transform-origin: 0 0;}  /* Asegura que el escalado ocurra desde la esquina superior izquierda */
+        #metaelixir {
+            position: absolute;
+            top: 500px; 
+            left: 620px;
+            width: 600px;
+            height: 200px;
+            z-index: 1;
+            transform: scale(0.4);
+            transform-origin: 0 0;
+        }
 
+        #metamana {
+            position: absolute;
+            top: 500px; 
+            left: 390px;
+            width: 600px;
+            height: 200px;
+            z-index: 1;
+            transform: scale(0.4);
+            transform-origin: 0 0;
+        }
+
+        #botrix-chat {
+            position: absolute;
+            top: 750px; /* desplazamiento desde arriba */
+            left: 570px; /* desplazamiento costados */ 
+            width: 400px; /* ancho */ 
+            height: 300px; /* alto */
+            z-index: 1;  /* capa */ 
+            transform: scale(0.4);
+        }
+
+        #soundalerts {
+            position: absolute;
+            top: 500px; /* desplazamiento desde arriba */
+            left: 0px; /* desplazamiento costados */ 
+            width: 100%; /* ancho */ /* SI SE DESCUADRA MUCHO HAY QUE PONERLE EN NUMEROS EN VEZ DE PORCENTAJE */
+            height: 100%; /* alto *//* SI SE DESCUADRA MUCHO HAY QUE PONERLE EN NUMEROS EN VEZ DE PORCENTAJE */
+            z-index: 2;  /* capa */ 
+        }
+
+        #botrix-alerts {
+            position: absolute;
+            top: 540px;
+            left: 70%;
+            width: 854px;
+            height: 480px;
+            z-index: 3;
+            transform: scale(0.4);
+            transform-origin: 0 0;
+        }
     </style>
 </head>
 <body>
-<!-- Widget de SoundAlerts -->
-<iframe id="soundalerts" src="https://source.soundalerts.com/overlay/fd9ea406-efce-3885-b5f5-868305d5c76c/tZlhgHsRHOlCXqWyS577" frameborder="0" allow="autoplay"></iframe>
 
-<!-- Widget de chat de Botrix -->
-<iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=14&fontSize=23&trovo=true&twitch=true&youtube=true&kick=false&livespace=false&platformIcon=true&theme=cake" frameborder="0" allow="autoplay"></iframe>
+    <!-- Widget de SongRequest botrix -->
+    <iframe id="songrequest" src="https://botrix.live/widgets/songrequest/?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
 
-<!-- Widget de SongRequest botrix -->
-<iframe id="songrequest" src="https://botrix.live/widgets/songrequest/?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
+    <!-- Widget de meta de elixir botrix -->
+    <iframe id="metaelixir" src="https://botrix.live/widgets/goals/elixir?tema=cleanradius&clientid=9Lpkd9wkOvH01DYtLKj3Ig&font=Arial&cantidad=5000&cantidadI=0&d=30&color=ff0088;ffffff&c=#ff0088#ffffff&texto=meta%20DE%20ELIXIR" frameborder="0" allow="autoplay"></iframe>    
 
-<!-- Widget de meta de elixir botrix -->
-<iframe id="metaelixir" src="https://botrix.live/widgets/goals/elixir?tema=cleanradius&clientid=9Lpkd9wkOvH01DYtLKj3Ig&font=Arial&cantidad=5000&cantidadI=0&d=30&color=ff0088;ffffff&c=#ff0088#ffffff&texto=meta%20DE%20ELIXIR" frameborder="0" allow="autoplay"></iframe>    
-    
-<!-- Widget de meta de mana de Botrix-->
-<iframe id="metamana" src="https://botrix.live/widgets/goals/mana?tema=cleanradius&clientid=9Lpkd9wkOvH01DYtLKj3Ig&font=Arial&cantidad=50000&cantidadI=0&d=7&color=0073ff;ffffff&c=#0073ff#ffffff&texto=meta%20de%20MANA" frameborder="0" allow="autoplay"></iframe>
+    <!-- Widget de meta de mana de Botrix-->
+    <iframe id="metamana" src="https://botrix.live/widgets/goals/mana?tema=cleanradius&clientid=9Lpkd9wkOvH01DYtLKj3Ig&font=Arial&cantidad=50000&cantidadI=0&d=7&color=0073ff;ffffff&c=#0073ff#ffffff&texto=meta%20de%20MANA" frameborder="0" allow="autoplay"></iframe>
 
-<!-- Widget de alertas de Botrix-->
-<iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
+    <!-- Widget de chat de Botrix -->
+    <iframe id="botrix-chat" src="https://botrix.live/widgets/chat/?bid=hL4jXwuISOTVQTdQVTPC9A&bots=false&emojis=true&hideCommands=false&hideMessages=false&hideMessagesSeconds=14&fontSize=23&trovo=true&twitch=true&youtube=true&kick=false&livespace=false&platformIcon=true&theme=cake" frameborder="0" allow="autoplay"></iframe>
+
+    <!-- Widget de SoundAlerts -->
+    <iframe id="soundalerts" src="https://source.soundalerts.com/overlay/fd9ea406-efce-3885-b5f5-868305d5c76c/tZlhgHsRHOlCXqWyS577" frameborder="0" allow="autoplay"></iframe>
+
+    <!-- Widget de alertas de Botrix-->
+    <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
 </body>
 </html>
