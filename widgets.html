@@ -65,6 +65,14 @@ z-index: 1;
 transform: scale(0.4);  /*Escalar el Widget */ 
 transform-origin: 0 0;} /* Asegura que el escalado ocurra desde la esquina superior izquierda */
 
+#throne {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;}
+        
 #botrix-alerts {
 position: absolute;
 top: 1px; /* Cerca de la parte superior */
@@ -93,6 +101,9 @@ transform-origin: 0 0;}  /* Asegura que el escalado ocurra desde la esquina supe
 <!-- Widget de meta de mana de Botrix-->
 <iframe id="metamana" src="https://botrix.live/widgets/goals/mana?tema=cleanradius&clientid=9Lpkd9wkOvH01DYtLKj3Ig&font=Arial&cantidad=50000&cantidadI=0&d=7&color=0073ff;ffffff&c=#0073ff#ffffff&texto=meta%20de%20MANA" frameborder="0" allow="autoplay"></iframe>
 
+<!-- Widget de alertas de throne-->
+<iframe id="throne" src="https://throne.com/stream-alerts/6w1S6ns0Z9aWPlQE8OnnDT1ui0Q2" frameborder="0" allow="autoplay"></iframe>    
+    
 <!-- Widget de alertas de Botrix-->
 <iframe id="botrix-alerts" src="https://botrix.live/alerts?bid=hL4jXwuISOTVQTdQVTPC9A" frameborder="0" allow="autoplay"></iframe>
 </body>
